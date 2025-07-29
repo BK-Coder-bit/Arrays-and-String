@@ -1,0 +1,7 @@
+66. Plus One
+https://leetcode.com/problems/plus-one/description/?envType=problem-list-v2&envId=array
+class Solution(object):
+    def plusOne(self, digits):
+        st = ''.join(str(i) for i in digits)   # join digits into string
+        val = int(st) + 1                      # convert to int and add 1
+        return [int(x) for x in str(val)]      # return as list of digits
